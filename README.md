@@ -1,8 +1,9 @@
-# [ICLR 2026] Disco: Densely-overlapping Cell Instance Segmentation via Adjacency-aware Collaborative Coloring
+# Disco: Densely-overlapping Cell Instance Segmentation via Adjacency-aware Collaborative Coloring
 
-This repository contains the supplementary materials for our ICLR 2026 submission, "Beyond Bipartite Constraints: Dynamic Conflict-aware Coloring for Complex Cell Instance Segmentation (Disco)".
 
-Our work introduces a novel framework, `Disco`, designed to address the fundamental challenges of instance segmentation in dense, topologically complex cellular tissues. The core of `Disco` is a "divide and conquer" strategy, featuring two innovative mechanisms: **"Explicit Marking"** for conflict-aware label generation and **"Implicit Disambiguation"** for robust, end-to-end constrained optimization.
+This repository contains the supplementary materials for our submission, "Disco: Densely-overlapping Cell Instance Segmentation via Adjacency-aware Collaborative Coloring".
+
+Our work introduces a novel framework Disco, designed to address the fundamental challenges of instance segmentation in dense, topologically complex cellular tissues. The core of Disco is a "divide and conquer" strategy, featuring two innovative mechanisms: **"Explicit Marking"** for conflict-aware label generation and **"Implicit Disambiguation"** for robust, end-to-end constrained optimization.
 
 ---
 
@@ -24,7 +25,7 @@ Each dataset is structured with:
 This directory contains the complete source code for our proposed **`Disco`** framework, implemented in PyTorch. The code is organized to be fully reproducible and includes:
 
 -   **Data Processing:** Scripts for our **"Explicit Marking"** label generation algorithm.
--   **Model Implementation:** The `DiscoNet` architecture and our decoupled loss system, including the crucial **Adjacency Constraint Loss ($\mathcal{L}_{adj}$)**.
+-   **Model Implementation:** The `Disco` architecture and our decoupled loss system, including the crucial **Adjacency Constraint Loss ($\mathcal{L}_{adj}$)**.
 -   **Experiment Scripts:** All necessary tools and configuration files to replicate the quantitative results (Tables 2-7) and qualitative visualizations (Figures 1-6) presented in the paper.
 
 ---
