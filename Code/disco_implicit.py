@@ -278,7 +278,7 @@ class BipartiteDisco(BaseSegmentor):
     def _adjacency_constraint_loss(self, bipartite_logit, inst_gt, adjacency_info):
        
         batch_size = bipartite_logit.shape[0]
-        constraint_loss = torch.tensor(0.0, device=bipartite_logit.device, dtype=torch.float32)  # 改为张量
+        constraint_loss = torch.tensor(0.0, device=bipartite_logit.device, dtype=torch.float32) 
         
         bipartite_pred = torch.argmax(bipartite_logit, dim=1)
         
